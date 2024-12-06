@@ -2,3 +2,8 @@
 .idea/
 markers/
 */__pycache__/
+
+venv/
+.venv/
+env/
+.env/

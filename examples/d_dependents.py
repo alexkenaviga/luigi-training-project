@@ -1,10 +1,10 @@
 import luigi
 
-# PYTHONPATH='.' luigi --module tasks ParameterTask --local-scheduler
+# PYTHONPATH='.' luigi --module examples ParameterTask --local-scheduler
 #   raise parameter.MissingParameterException
 
 
-# PYTHONPATH='.' luigi --module tasks ParameterTask --local-scheduler  --date 2024-12-03
+# PYTHONPATH='.' luigi --module examples ParameterTask --local-scheduler  --date 2024-12-03
 
 
 # Upstream --- required by ---> Downstream
@@ -18,7 +18,7 @@ class UpstreamTask(luigi.Task):
 
     UpstreamTask ---> required by ---> DownstreamTask
 
-    Run with: `PYTHONPATH='.' luigi --module tasks ParameterTask --local-scheduler  --date 2024-12-03`
+    Run with: `PYTHONPATH='.' luigi --module examples DownstreamTask --local-scheduler  --date 2024-12-03`
     """
 
     date = luigi.DateParameter()

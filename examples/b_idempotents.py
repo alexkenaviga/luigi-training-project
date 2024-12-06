@@ -6,7 +6,7 @@ class FileTask(luigi.Task):
 
     The existence of the content referenced by `output()` determines if the task will be run or considered already done
 
-    Run with: `PYTHONPATH='.' luigi --module tasks FileTask --local-scheduler`
+    Run with: `PYTHONPATH='.' luigi --module examples FileTask --local-scheduler`
     """
 
     def run(self):

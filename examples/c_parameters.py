@@ -7,7 +7,7 @@ class ParamsTask(luigi.Task):
     Defined parameters can be passed using the 'kebab case' version of the variable name:
     i.e.: `string_to_write` becomes `--string-to-write`
 
-    Run with: `PYTHONPATH='.' luigi --module tasks ParamsTask --local-scheduler
+    Run with: `PYTHONPATH='.' luigi --module examples ParamsTask --local-scheduler
             --string-to-write "my complex content" --output-filename "complex-content"`
     """
 
