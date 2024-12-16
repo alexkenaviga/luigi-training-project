@@ -67,3 +67,10 @@ To define a _multi-file_ **python module**:
     from .hello_tasks import Task2
     from .other_tasks import OtherTask
     ```
+### Multiple executions
+To run a task accepting `luigi.DateParameter` multiple times passing a **range of dates** use the `DailyRangeBase` 
+utility
+
+```bash
+PYTHONPATH='.' luigi --module <module-name> DailyRangeBase --of <task-name>  --start <start_date> --stop <stop_date> --local-scheduler
+```
